@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time Log App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <label>Select Date:</label>
+        <input type="text" name="select-date" id="date">
+        symbol
+        <input type="button" class="btn" value="Load">
+        <input type="button" class="btn" value="Export Timesheet as PNG">
+    </div>
+    <hr>
+    <div class="add">
+        <input type="text" name="stime" id="stime" placeholder="Start Time">
+        <input type="text" name="etime" id="etime" placeholder="End Time">
+        <input type="text" name="description" id="description" placeholder="Task Description">
+        <input type="button" class="btn" value="Add" onclick="onAdd()">
+    </div>
+    <hr>
+    <div class="list">
+        <table id="list">
+            <thead>
+                <tr>
+                    <td>Start Time</td>
+                    <td>End Time</td>
+                    <td>Minutes</td>
+                    <td class="tdesc">Task Description</td>
+                    <td></td>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+    <div class="footer">
+        Day Total In Minutes
+        Day Total in Hours
+    </div>
+    <hr>
+
+    <script src="script.js"></script>
+</body>
+</html>

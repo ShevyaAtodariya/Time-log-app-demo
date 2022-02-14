@@ -1,0 +1,57 @@
+/* stylesheet for time log app */
+
+.header{
+    margin-top: 20px;
+    text-align: center;
+}
+.header input{
+    margin: 0px 10px;
+}
+
+hr{
+    width: 95%;
+    margin: 10px auto;
+}
+
+.btn{
+    background: transparent;
+    border: 1px solid black;
+    border-radius: 4px;
+    padding: 5px 20px;
+}
+
+.add{
+    margin-left: 40px;
+}
+.add input{
+    margin: 5px 15px;
+}
+#stime, #etime{
+    width: 14%;
+}
+#description{
+    width: 53%;
+}
+
+input::placeholder{
+    color: black;
+}
+
+table{
+    /* border: 1px solid black; */
+    border-collapse: collapse;
+    margin: 20px auto;
+    width: 95%;
+    text-align: center;
+}
+tr, td{
+    border: 1px solid rgb(172, 172, 172);
+    /* border-collapse: collapse; */
+}
+.tdesc{
+    /* width: 50%; */
+}
+
+.footer{
+    margin: 0px 0px 15px 35px;
+}
