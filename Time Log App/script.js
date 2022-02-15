@@ -1,1 +1,0 @@
-// script file for time log app
