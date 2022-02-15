@@ -10,15 +10,14 @@
 <body>
     <div class="header">
         <label>Select Date:</label>
-        <input type="text" name="select-date" id="date">
-        symbol
+        <input type="date" name="select-date" id="date" placeholder="">
         <input type="button" class="btn" value="Load">
         <input type="button" class="btn" value="Export Timesheet as PNG">
     </div>
     <hr>
     <div class="add">
-        <input type="text" name="stime" id="stime" placeholder="Start Time">
-        <input type="text" name="etime" id="etime" placeholder="End Time">
+        <input type="text" name="stime" id="stime" placeholder="Start Time" class="time-pickable" readonly>
+        <input type="text" name="etime" id="etime" placeholder="End Time" class="time-pickable" readonly>
         <input type="text" name="description" id="description" placeholder="Task Description">
         <input type="button" class="btn" value="Add" onclick="onAdd()">
     </div>
@@ -44,5 +43,6 @@
     <hr>
 
     <script src="script.js"></script>
+    <script src="TimePicker.js"></script>
 </body>
 </html>

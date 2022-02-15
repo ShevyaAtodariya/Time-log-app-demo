@@ -8,6 +8,41 @@
     margin: 0px 10px;
 }
 
+[type="date"] {
+  background:#fff url(https://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/calendar_2.png)  97% 50% no-repeat ;
+  border: 1px solid black;
+  border-radius: 2px;
+  padding: 2px;
+}
+[type="date"]::-webkit-inner-spin-button {
+  display: none;
+}
+[type="date"]::-webkit-calendar-picker-indicator {
+  opacity: 0;
+}
+
+.time-picker {
+	position: absolute;
+	display: inline-block;
+	padding: 5px;
+	background: #d1d1d1;
+	border-radius: 4px;
+}
+
+.time-picker__select {
+    -webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	outline: none;
+	text-align: center;
+	border: 1px solid #dddddd;
+	border-radius: 4px;
+	padding: 4px 8px;
+	background: #ffffff;
+    cursor: pointer;
+	font-family: 'Heebo', sans-serif;
+}
+
 hr{
     width: 95%;
     margin: 10px auto;
@@ -44,12 +79,24 @@ table{
     width: 95%;
     text-align: center;
 }
-tr, td{
+td{
     border: 1px solid rgb(172, 172, 172);
     /* border-collapse: collapse; */
 }
+tr{
+    border: 1px solid rgb(172, 172, 172);
+    height: 32px;
+}
+
+a{
+    background: transparent;
+    border: 1px solid black;
+    border-radius: 4px;
+    padding: 4px 10px;
+}
+
 .tdesc{
-    /* width: 50%; */
+    width: 40%;
 }
 
 .footer{
