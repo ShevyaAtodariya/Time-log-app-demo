@@ -38,7 +38,7 @@ function insertRecord(data) {
 function indexOf() {
   var table = document.getElementById("list");
   var tl = table.rows.length;
-  return tl;
+  return tl-1;
 }
 
 function display() {
