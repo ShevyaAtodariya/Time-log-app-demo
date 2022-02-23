@@ -48,8 +48,8 @@ function display() {
     entries = [];
   } else {
     entries = JSON.parse(allEntries);
-    document.getElementById("noData").style.display = "none";
     entries.forEach((item, index) => {
+      document.getElementById("noData").style.display = "none";
       var newRow = table.insertRow(table.length);
 
       cell1 = newRow.insertCell(0);
