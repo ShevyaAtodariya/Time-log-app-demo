@@ -1,0 +1,142 @@
+/* stylesheet for time log app */
+* {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+}
+
+.header {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.header input {
+  margin: 0px 10px;
+}
+
+/* date picker styles */
+[type="date"] {
+  background: #fff
+    url(https://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/calendar_2.png)
+    97% 50% no-repeat;
+  border: 1px solid black;
+  border-radius: 2px;
+  padding: 2px;
+}
+[type="date"]::-webkit-inner-spin-button {
+  display: none;
+}
+[type="date"]::-webkit-calendar-picker-indicator {
+  opacity: 0;
+}
+
+/* time picker styles */
+.time-picker {
+  position: absolute;
+  display: inline-block;
+  padding: 5px;
+  background: #d1d1d1;
+  border-radius: 4px;
+}
+
+.time-picker__select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: none;
+  text-align: center;
+  border: 1px solid #dddddd;
+  border-radius: 4px;
+  padding: 4px 8px;
+  background: #ffffff;
+  cursor: pointer;
+  font-family: "Heebo", sans-serif;
+}
+
+hr {
+  width: 95%;
+  margin: 10px auto;
+}
+
+.btn {
+  background: transparent;
+  border: 1px solid black;
+  border-radius: 4px;
+  padding: 5px 20px;
+  cursor: pointer;
+}
+
+.btn:hover, a:hover {
+    font-weight: bold;
+    border: 2px solid black;
+}
+
+/* input fields */
+.add {
+  margin-left: 40px;
+}
+
+.add input {
+  margin: 5px 15px;
+}
+
+.add input[type="text"] {
+  padding: 4px 5px;
+}
+
+#stime,
+#etime {
+  width: 14%;
+}
+
+#description {
+  width: 53%;
+}
+
+input::placeholder {
+  color: black;
+}
+
+/* table styles */
+table {
+  border-collapse: collapse;
+  margin: 20px auto;
+  width: 95%;
+  text-align: center;
+}
+
+td {
+  border: 1px solid rgb(172, 172, 172);
+}
+
+tr {
+  border: 1px solid rgb(172, 172, 172);
+  height: 32px;
+}
+
+/* edit & delete button styles */
+a {
+  background: transparent;
+  border: 1px solid black;
+  border-radius: 4px;
+  padding: 4px 10px;
+  cursor: pointer;
+}
+
+.tdesc {
+  width: 40%;
+}
+
+/* footer styles */
+.footer {
+  margin: 0px 0px 15px 35px;
+  display: flex;
+  flex-direction: row;
+}
+.footer div {
+  margin-right: 20px;
+}
+
+/* snapshot style */
+#output {
+  margin-top: 50px;
+}

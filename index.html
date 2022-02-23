@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time Log App</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+    <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.0.0-rc.5/dist/html2canvas.min.js">
+    </script>
+</head>
+<body>
+    <div class="header">
+        <label>Select Date:</label>
+        <input type="date" name="select-date" id="date" placeholder="">
+        <input type="button" class="btn" value="Load">
+        <input type="button" class="btn" value="Export Timesheet as PNG" onclick="takeShot();">
+    </div>
+    <hr>
+    <div class="add">
+        <input type="text" name="stime" id="stime" placeholder="Start Time" class="time-pickable" readonly>
+        <input type="text" name="etime" id="etime" placeholder="End Time" class="time-pickable" readonly>
+        <input type="text" name="description" id="description" placeholder="Task Description">
+        <input type="button" class="btn" value="Add" onclick="onAdd()">
+    </div>
+    <hr>
+    <div id="photo">
+        <div>
+            <table id="list">
+                <thead>
+                    <tr>
+                        <td>Start Time</td>
+                        <td>End Time</td>
+                        <td>Minutes</td>
+                        <td class="tdesc">Task Description</td>
+                        <td></td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr id="noData">
+                        <td colspan="5">No Data Found !</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="footer">
+            <div>
+                Day Total In Minutes <br>
+                <span id="totalM"></span>
+            </div>
+            <div>
+                Day Total in Hours <br>
+                <span id="totalH"></span>
+            </div>
+            </div>
+    </div>
+    <hr>
+    <div id="output"></div>
+
+    <script src="./script.js"></script>
+    <script src="./TimePicker.js"></script>
+</body>
+</html>
